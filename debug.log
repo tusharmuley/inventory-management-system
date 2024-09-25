@@ -7967,3 +7967,15 @@ Not Found: /items/7/
 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
 (0.000) SELECT "inventory_item"."id", "inventory_item"."name", "inventory_item"."description", "inventory_item"."quantity" FROM "inventory_item" WHERE "inventory_item"."id" = 8 ORDER BY "inventory_item"."id" ASC LIMIT 1; args=(8,); alias=default
 "GET /items/8/ HTTP/1.1" 200 76
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\Administrator\Desktop\assignment\venv\Lib\site-packages\rest_framework\templates with glob **/*.
+Watching dir C:\Users\Administrator\Desktop\assignment\inventory_system\locale with glob **/*.mo.
+Watching dir C:\Users\Administrator\Desktop\assignment\venv\Lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\Administrator\Desktop\assignment\inventory_system\inventory\locale with glob **/*.mo.
+(0.015) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
